@@ -1,0 +1,12 @@
+title       "UPS Battery"
+vtitle      "Battery/percent"
+area        :stacked
+description "HK UPS Battery"
+ymin	0
+ymax	100
+linewidth	10
+
+field :iowait, :scale => 1,
+               :color => "blue",
+               :alias => "UPS Battery",
+               :data  => "APC.UPS.Battery.Capacity"

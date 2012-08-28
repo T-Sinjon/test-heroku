@@ -1,0 +1,22 @@
+title       "SZ Isilon-1 CPU"
+vtitle      "percent"
+area        :none
+description "Isilon-1 CPU"
+ymin	0
+ymax	100
+linewidth	4
+
+field :User,   :scale => 1,
+               :color => "green",
+               :alias => "User CPU",
+               :data  => "Isilon.Cluster.10.0.11.1.CPU.CpuUser"
+
+field :System, :scale => 1,
+               :color => "red",
+               :alias => "System CPU",
+               :data  => "Isilon.Cluster.10.0.11.1.CPU.CpuSystem"
+
+field :Idle,   :scale => 1,
+               :color => "grey",
+               :alias => "Idle CPU",
+               :data  => "Isilon.Cluster.10.0.11.1.CPU.CpuIdle"

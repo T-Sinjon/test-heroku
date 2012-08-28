@@ -1,0 +1,32 @@
+title       "SZ Isilon-2 Network"
+vtitle      "throughout_bits"
+area        :first
+description "Isilon-2 Network"
+ymin	0
+yunit_system	:si
+linewidth	2
+
+field :InBits, :scale => 1,
+               :color => "green",
+               :alias => "InBits",
+               :data  => "Isilon.Cluster.10.0.12.1.Network.InBits"
+
+field :OutBits, :scale => 1,
+               :color => "blue",
+               :alias => "OutBits",
+               :data  => "Isilon.Cluster.10.0.12.1.Network.OutBits"
+
+field :Total,  :scale => 1,
+               :color => "red",
+               :alias => "Total",
+               :data  => "sumSeries(Isilon.Cluster.10.0.12.1.Network.*)"
+
+line  :caption => "Critical",
+        :value => 10000000000,
+        :color => "pink",
+        :dashed => true
+
+line  :caption => "Warning",
+        :value => 6000000000,
+        :color => "yellow",
+        :dashed => true

@@ -1,0 +1,17 @@
+title       "UPS load"
+vtitle      "load/percent"
+area        :none
+description "HK UPS load"
+ymin	0
+ymax	100
+linewidth	2
+
+field :iowait, :scale => 1,
+               :color => "green",
+               :alias => "UPS load",
+               :data  => "APC.UPS.Output.Load"
+
+line  :caption => "Warning",
+        :value => 80,
+        :color => "yellow",
+        :dashed => true

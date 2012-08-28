@@ -1,0 +1,22 @@
+title       "UPS temperature"
+vtitle      "temperature"
+area        :first
+description "HK UPS Battery"
+ymin	0
+ymax	100
+linewidth	2
+
+field :iowait, :scale => 1,
+               :color => "blue",
+               :alias => "UPS temperature",
+               :data  => "APC.UPS.Battery.Temperature"
+
+line  :caption => "Critical",
+        :value => 50,
+        :color => "pink",
+        :dashed => true
+
+line  :caption => "Warning",
+        :value => 30,
+        :color => "yellow",
+        :dashed => true
