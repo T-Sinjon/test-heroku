@@ -1,1 +1,22 @@
+<<<<<<< HEAD
 config/gdash.yaml
+=======
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
+>>>>>>> 2334e7bfbfff5157da80d3ad9422a0b3e04f092d

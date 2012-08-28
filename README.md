@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 What?
 =====
 
@@ -175,3 +176,9 @@ Contact?
 --------
 
 R.I.Pienaar / rip@devco.net / http://www.devco.net/ / @ripienaar
+=======
+test-heroku
+===========
+
+test-heroku
+>>>>>>> 2334e7bfbfff5157da80d3ad9422a0b3e04f092d
